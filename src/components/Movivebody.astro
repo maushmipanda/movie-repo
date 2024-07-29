@@ -1,0 +1,181 @@
+---
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./style.css";
+import "astro-bootstrap";
+import { Carousel } from 'astro-bootstrap';
+import type { CarouselSlideType } from 'astro-bootstrap';
+import '@popperjs/core';
+
+const slides: CarouselSlideType[] = [
+  { img: '/banner1.jpg', alt: 'First placeholder', active: true },
+  { img: '/banner2.jpg', alt: 'Second placeholder' },
+  { img: '/banner3.jpg', alt: 'Third placeholder' },
+];
+
+const id = 'carouselExampleBasic';
+---
+
+
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/src/layouts/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+		<meta name="generator" content={Astro.generator} />
+		<script   src="/src/layouts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/src/components/bootstrap.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <div class="container-fluid bg-dark">	
+          <!---NAVEBAR END HERE -->
+          <!--MOVIE OVERLAY -->
+          <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!--JAVASCRIPT FOR MOVIE BUTTON  -->
+             <script is:inline>
+              var activeSlide = 0;
+                function showVideoes(){
+                  let embedClasses = document.querySelectorAll('.embed');
+                  embedClasses.forEach((embedTag,idx )=>{
+                    if(activeSlide == idx){
+                      embedTag.classList.add('show')
+                      embedTag.classList.remove('hide')
+                    } else{
+                      embedTag.classList.add('hide')
+                      embedTag.classList.remove('show')
+                    }
+                  })
+                }
+                function closeNav() {
+                  document.getElementById("myNav").style.width = "0%";
+                }
+             </script>
+            <!-- Overlay content -->
+            <div id="overlayContent" class="overlay-content"></div>
+
+          </div>
+      <div>
+        <!------MOVIE OVERLAY END HERE----- -->
+        <!--MOVIE CAROUSEL START -->
+         <div class="banner">
+          <Carousel {id} fade>
+            <Carousel.Indicators {id} {slides} />
+            <Carousel.Inner>
+              {
+                slides.map((slide) => (
+                  <Carousel.Item active={slide.active}>
+                    <img
+                      src={slide.img}
+                      class="d-block w-100 img-fluid"
+                      alt={slide.alt}
+                    />
+                  </Carousel.Item>
+                ))
+              }
+            </Carousel.Inner>
+            <Carousel.Controls id={id} />
+          </Carousel>
+            <!--MOVIE CAROUSEL END --> 
+              
+            <!--MOVIE CARD START HERE -->
+              <div class="movie-folder" >
+                <div   >
+
+                    <div class="row row-cols-1 row-cols-md-4"id = 'main' >
+                        <div class="movie-card"  >
+                            <div class="movie-header theDarkTower">
+                              <img src="" alt="banner" class="card-img"/>
+                                <div class="header-icon-container">
+                                    <a href="#">
+                                        <i class="material-icons header-icon"></i>
+                                    </a>
+                                </div>
+                            </div><!--movie-header-->
+                            <div class="movie-content">
+                                <div class="movie-content-header">
+                                    <a href="#">
+                                        <h3 class="movie-title">The Dark Tower</h3>
+                                    </a>
+                                    <div class="imax-logo"></div>
+                                </div>
+                                <div class="movie-info">
+                                    <div class="info-section">
+                                        <label>Rating</label>
+                                        <span class="green">7.8</span>
+                                    </div><!--date,time-->
+                                    <div class="info-section ">
+                                        <label class="right">Overview</label>
+                                        <span>
+                                           <p>
+                                            Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely
+
+                                           </p>
+                                        </span>
+                                       <button class="btn_overview">
+                                        More
+                                       </button>
+                                    </div><!--screen-->
+                                
+                                </div>
+                            </div><!--movie-content-->
+                        </div><!--movie-card--> 
+                    </div>
+                
+                </div>
+              </div>
+               <!--MOVIE CARD START END HERE -->
+               
+              <div class="gallery">
+                <!--MOVIE SECOND BANNER AREA START-->
+
+                <section class="bsb-hero-5 px-3 bsb-overlay" style=" background-position: center;background-image: url('background2n.jpg');background-attachment: fixed;  background-repeat: no-repeat ; ">
+                  <div class="container">
+                    <div class="row justify-content-md-center align-items-center">
+                      <div class="col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7">
+                        <h2 class="display-1 text-white text-center fw-bold mb-4">Deadpool & Wolverine</h2>
+                        <p class="lead text-white text-center mb-5 d-flex justify-content-sm-center">
+                          <span class="col-12 col-sm-10 col-md-8 col-xxl-7">A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him.But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.
+
+                          </span>
+                        </p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                          <a href='https://youtu.be/Idh8n5XuYIA?si=eQ0r3XXxKJS9fUUz' class="btn_banner btn_overview" >More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+                                </div>
+                                 <!--MOVIE SECOND BANNER AREA END-->
+                                 <!--TOP MOVIE IN THIS YEAR  start-->
+                                <div class="container" >
+                                  <div class="top_movie">
+                                    <h3>Top Movie in This Year</h3>
+                                  </div>
+                                  <table class="table table-hover table-dark">
+                                    <thead id = "main_tab">
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Movie</th>
+                                        <th scope="col">Rating</th>
+                                        <th scope="col">collection</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="main2">
+                                   
+                                    </tbody>
+                                  </table>
+                                </div>
+                                 <!--TOP MOVIE IN THIS YEAR  start-->
+     </div>  
+    </div>
