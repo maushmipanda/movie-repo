@@ -1,4 +1,5 @@
-Movie  Web Application
+Movie  Web Application:
+
 The Movie Repository Web Application is a sleek and interactive platform designed for movie enthusiasts to explore and discover popular films. Utilizing the powerful TMDB (The Movie Database) API, this application provides users with up-to-date information on a wide range of movies.
 
 Key Features:
