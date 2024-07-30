@@ -92,7 +92,12 @@ const tagsEl = document.getElementById('tags');
 const overlayContent = document.getElementById('overlay-content');
 
 var selectedGenre = [];
+/*
+setGenre():
+This function sets up the genre tags for filtering movies. It creates a list of genres, attaches event listeners to each genre tag,
+ and handles the selection of a genre to filter movies by it.
 
+*/
 function setGenre() {
     tagsEl.innerHTML = '';
     let tagCount = 0; // Initialize a counter for the tags
