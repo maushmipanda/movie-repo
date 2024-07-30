@@ -134,7 +134,9 @@ function setGenre() {
 
     updateActiveGenres(); // Initial highlight based on selected genres
 }
-
+/*updateActiveGenres():
+This function highlights the selected genre tags to provide visual feedback on which genres are currently active.
+*/
 function updateActiveGenres() {
     const tags = document.querySelectorAll('.tag');
     tags.forEach(tag => {
