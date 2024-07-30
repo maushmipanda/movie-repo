@@ -154,7 +154,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-
+/*
+getMovies(url):
+Fetches movies from the specified URL and processes the data to display it on the page.
+*/
 
 getMovies(API_URL);
 function getMovies(url){
