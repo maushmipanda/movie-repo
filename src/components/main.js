@@ -167,6 +167,11 @@ function getMovies(url){
         showMovies2(data.results);
     })
 }
+/************************************** 
+showMovies(data):
+Displays the movie information in the main section of the page. 
+It creates movie cards for each movie in the fetched data.
+****************************************/
 function showMovies(data){
     main.innerHTML='';
   data.forEach(movie =>{
@@ -271,7 +276,10 @@ function openNav(movie) {
   .catch(error => console.error('Error:', error));
   
 }
-
+/****************************************************************
+ showMovies2(data):
+ Displays the movie information in a tabular format.
+ ****************************************************************/
 function showMovies2(data){
     main_tab.innerHTML=''
   data.forEach(movie =>{
