@@ -13,12 +13,16 @@
 body{
     font-family: 'Poppins',sans-serif;
     margin: 0;
-   background-color:#343a40;
+    background-color:#212529 ;
     
+}
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgb(41, 40, 40) !important;
 }
 /*-------------------Navbar area---------------*/
 .navbar-custom {
-  background-color:#343a40;
+  color:#212529 !important;
 }
 .navbar-custom .navbar-brand,
  .navbar-custom .navbar-text {
@@ -26,11 +30,11 @@ color: #fff;
 }
 .logo{
     font-size: 30px;
-    color: #B3E5FC;
+    color: #fff;
     font-weight: bold;
 }
 .nav-link {
-    color: #B3E5FC !important;  
+    color: #fff !important;  
     overflow: hidden;
 }
 .banner img{
@@ -44,7 +48,7 @@ color: #fff;
 .btn_overview:hover{
   background-color:#1e88e559;
   color: #f1f1f1;
-  color: #F4511E !important;
+  color: #0056b3 !important; ;
   transition: ease-in 0.5s;
 }
 .logo img{
@@ -74,7 +78,7 @@ color: #fff;
   }
   
   a:hover {
-    color: #F4511E !important;
+    color: #0056b3 !important; ;
   }
   
   .movie-folder{
@@ -131,14 +135,14 @@ color: #fff;
     margin: 0 auto;
     color: #ffffff;
     font-size: 54px;
-    text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+    text-shadow: 0px 0px 20px #fff, 0px 5px 20px #fff;
     opacity: .85;
   }
   
   .header-icon:hover {
     background: rgba(0, 0, 0, 0.15);
     font-size: 74px;
-    text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+    text-shadow: 0px 0px 20px #fff, 0px 5px 30px #6ABCEA;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     opacity: 1;
@@ -248,10 +252,10 @@ color: #fff;
     border: 2px solid #0d61c2;
 }
  .btn-outline-dark {
-  color: #6abcea !important;
+  color: #fff !important;
   background-color: transparent;
   background-image: none;
-  border-color: #6abcea !important;
+  border-color: #fff !important;
 }
 img.card-img {
   width: 100%;
@@ -285,7 +289,7 @@ img.card-img {
 .text-box{
   margin-top:30px ;
   margin-bottom: 30px;
-  color: #6abcea;
+  color: #fff;
   padding-top: 30px;
 }
 .text-box h2{
@@ -304,14 +308,14 @@ img.card-img {
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     /* color: rgba(0, 0, 0, .9); */
-    color: #F4511E !important;
+    color: #0056b3 !important; 
     cursor: pointer;
 }
 .navbar-light .navbar-nav a:hover{
-  color: #F4511E !important;
+   color: #0056b3 !important; 
 }
 ul#tags {
-  color: #B3E5FC;
+  color: #fff;
 }
 #tags li {
   padding: 0 20px;
@@ -319,13 +323,13 @@ ul#tags {
 }
 .active,#tags li:hover{
   
-  color: #F4511E !important; 
+   color: #1d7afd !important;
   cursor: pointer;
 }
 .active{
-  color: #F4511E !important;
-}
-.btn_banner{
+  color: #3986f3 !important;                          
+} 
+ .btn_banner{
   text-decoration: none;
   padding: 10px 50px;
   margin-top: 40px;
@@ -419,7 +423,9 @@ input#search {
   right: 45px;
   font-size: 60px;
 }
-
+div#main {
+  margin-left: -41px;
+}
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -455,12 +461,12 @@ input#search {
 a.icon {
   float: right;
   display: none ;
-  color: #B3E5FC;
+  color: #fff;
   margin-right: 5px;
   margin-left: 5px;
 }
 .icon:hove{
-  color: #F4511E !important;
+  color: #0056b3 !important; 
 }
 .topnav .icon {
   display: block;
@@ -493,3 +499,19 @@ a.icon {
   text-align: center;
   transition: ease-in-out 10s;
 }}
+
+
+button {
+  background-color: #fff; /* Light gray background */
+  color: #666666; /* Dark gray text */
+}
+a {
+  color: #0056b3 !important; /* Darker blue for better contrast */
+}
+
+a:hover {
+  color: #003580 !important; /* Even darker blue for hover state */
+}
+h1 {
+  color: #333333; /* Darker text color for better contrast */
+}
