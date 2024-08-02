@@ -18,7 +18,7 @@ body{
 }
 /*-------------------Navbar area---------------*/
 .navbar-custom {
-  background:#395571;
+  background-color:#343a40;
 }
 .navbar-custom .navbar-brand,
  .navbar-custom .navbar-text {
@@ -196,9 +196,7 @@ color: #fff;
     text-align: left;
     padding-left: 10px;
   }
-  div#main {
-  margin-left: -41px;
-}
+  
   
   .info-section label {
     display: block;
