@@ -263,6 +263,7 @@ img.card-img {
   overflow: hidden;
 }
 .info-section p{
+  margin-right: 13px;
   line-height: 25px;
   height:80px;
   overflow: hidden;
@@ -328,7 +329,7 @@ ul#tags {
   color:#c11119 !important;  
 }
 .btn_banner{
-  text-align: center;  
+  text-align: center;
   text-decoration: none;
   padding: 10px 50px;
   margin-top: 40px;
