@@ -263,6 +263,7 @@ img.card-img {
   overflow: hidden;
 }
 .info-section p{
+  margin-right: 13px;
   line-height: 25px;
   height:80px;
   overflow: hidden;
@@ -476,6 +477,16 @@ a.icon {
     float: right;
     display: block;
   }
+  heading-text {
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.para-text {
+  font-size: 10px;}
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -503,4 +514,21 @@ utton.btn.btn-primary.mb-4 {
 }
 ooter.text-center.text-white {
   background:#c11119 !important;
+}
+
+.heading-text{
+  color: #fff;
+  text-align: center;
+  padding-top: 3rem;
+}
+.movie-red{
+  color:#c11119
+}
+.para-text{
+  color: #fff;
+  text-align: center;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto!important;
 }
