@@ -241,7 +241,7 @@ function openNav(movie) {
       // Extract movie details
       const { title, overview, vote_average,release_date,runtime,origin_country,original_language} = movieData;
       let movieDetails = `
-        <h4>${title}</h4>
+        <h1>${title}</h1>
         <p>${overview}</p>
         <p><strong>Rating:</strong> ${vote_average} <strong class="space">Release Date:</strong> ${release_date} <strong class="space">Runtime:</strong> ${runtime}min  <strong class="space">Country:</strong> ${origin_country} <strong class="space">Original Language:</strong> ${original_language} </p>
       `;
