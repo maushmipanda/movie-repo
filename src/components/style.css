@@ -503,3 +503,7 @@ utton.btn.btn-primary.mb-4 {
 ooter.text-center.text-white {
   background:#c11119 !important;
 }
+.img-fluid{
+  max-width: 100%;
+  height: auto!important;
+}
