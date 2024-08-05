@@ -192,7 +192,7 @@ function showMovies(data){
                                 <div class="movie-content">
                                     <div class="movie-content-header">
                                         <a href="#">
-                                            <h3 class="movie-title">${title}</h3>
+                                            <h4 class="movie-title">${title}</h4>
                                         </a>
                                         <div class="imax-logo"></div>
                                     </div>
@@ -241,7 +241,7 @@ function openNav(movie) {
       // Extract movie details
       const { title, overview, vote_average,release_date,runtime,origin_country,original_language} = movieData;
       let movieDetails = `
-        <h1>${title}</h1>
+        <h4>${title}</h4>
         <p>${overview}</p>
         <p><strong>Rating:</strong> ${vote_average} <strong class="space">Release Date:</strong> ${release_date} <strong class="space">Runtime:</strong> ${runtime}min  <strong class="space">Country:</strong> ${origin_country} <strong class="space">Original Language:</strong> ${original_language} </p>
       `;
