@@ -499,4 +499,27 @@ a.icon {
   text-align: center;
   transition: ease-in-out 10s;
 }}
+button.btn.btn-primary.mb-4 {
+  background: #232323 !important;
+  border: 2px solid red;
+}
+footer.text-center.text-white {
+  background:#c11119 !important;
+}
 
+.heading-text{
+  color: #fff;
+  text-align: center;
+  padding-top: 3rem;
+}
+.movie-red{
+  color:#c11119
+}
+.para-text{
+  color: #fff;
+  text-align: center;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto!important;
+}
