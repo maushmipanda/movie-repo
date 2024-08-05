@@ -272,7 +272,7 @@ function showMovies2(data){
 
                    
         <tr>
-            <th scope="row"></th>
+            <th scope="row">⭐</th>
             <td>${title}</td>
             <td>${vote_average}</td>
             <td>${release_date}</td>
